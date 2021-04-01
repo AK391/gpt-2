@@ -12,11 +12,11 @@ inputs = gr.inputs.Textbox(lines=1, label="Input Text")
 outputs =  gr.outputs.Textbox(label="GPT-2")
 
 title = "GPT-2"
-description = "demo for OpenAI GPT-2. To use it, simply add your text, or click one of the examples to load them and optionally add a text label seperated by commas to help clip classify the image better. Read more at the links below."
-article = "<p style='text-align: center'><a href='https://openai.com/blog/clip/'>CLIP: Connecting Text and Images</a> | <a href='https://github.com/openai/CLIP'>Github Repo</a></p>"
+description = "demo for OpenAI GPT-2. To use it, simply add your text, or click one of the examples to load them. Read more at the links below."
+article = "<p style='text-align: center'><a href='https://openai.com/blog/better-language-models/'>Better Language Models and Their Implications</a> | <a href='https://github.com/openai/gpt-2'>Github Repo</a></p>"
 examples = [
             ["Hi"],
-            ["Guess what machine learning I used today"],
+            ["What is OpenAI?"],
 ]
 
 gr.Interface(gpt2, inputs, outputs, title=title, description=description, article=article, examples=examples).launch()
